@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SET játék</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+<div id="everything">
+    <div id="buttons" hidden>
+        <p>Egyéb Beállítások</p>
+        <button id="isThereASetButton" hidden>Létezik-e Set</button><br>
+        <span id="yesSpan"></span>
+        <button id="setShowButton" hidden>Set mutatása</button>
+        <button id="plusThreeButton" hidden>+3 lapos kiegészítés</button>
+        <p>Játékosok:</p>
+        <div id="actualPlayers">
+            <table>
+                <p id="player1">Player1</p>
+                <p>Pontok:</p>
+                <p id="player1Points">0</p>
+            </table>
+        </div>
+    </div>
+
+    <div id="menu">
+        <div id="cim">
+            <h1>SET játék</h1>
+            <p>by Szakal Kristof</p>
+        </div>
+        <button id="startButton">Start</button>
+        <br>
+        <button id="playersN">Játékosszám</button>
+        <br>
+        <button id="gameMode">Játékmód</button>
+        <br>
+        <button id="settings">Beállítások</button>
+        <br>
+        <button id="rulesButton">Játékszabály</button>
+    </div>
+    
+    <div id="game" hidden>
+        <div id="deck">
+        </div>
+    </div>
+    
+    <div id="playersIn" hidden>
+        <h1>Játékosok száma:</h1>
+        <input id="PNI" type="number" value="1" max="10" min="1">
+        <ul id="playersList">
+            <li><input type="text" value="Player1"></li>
+        </ul>
+        <!-- Player Names!!! -->
+        <br>
+        <button id="OK">Rendben, vissza</button>
+    </div>
+    
+    <div id="gameModeSettings" hidden>
+        <h1>Játékmód választása</h1>
+        <input type="radio" id="noob" name="gamemode" value="noob" checked>
+        <label for="noob">Gyakorló</label>
+        <input type="radio" id="race" name="gamemode" value="race">
+        <label for="race">Verseny</label><br>
+    
+        <button id="backFromGM">Rendben, vissza</button>
+    </div>
+    
+    <div id="settingsPage" hidden>
+        <h1>Beállítások</h1>
+        <input type="checkbox" id="isThereASet">
+        <label for="isThereASet"> Létezik-e Set</label><br>
+        <input type="checkbox" id="setShow">
+        <label for="setShow"> Set mutatása</label><br>
+        <input type="checkbox" id="plusThree">
+        <label for="plusThree"> +3 lapos kiegészítés</label><br><br>
+        <button id="backFromSettings">Rendben, vissza</button>
+    </div>
+    
+    <div id="rules" hidden>
+        <button id="back">Vissza</button>
+    
+        <h1>SZABÁLYOK</h1>
+        <p>A játék célja hogy 3 kártyából álló SET-eket találjunk meg az asztalra lehelyezett 12 kártyából. <br> Minden kártyának <strong>4 tulajdonsága</strong>   van, amik a következők: <br>
+            <div id="szab">
+            <strong>FORMA: </strong>
+            ovális, hullámos, rombusz
+            <br>
+            <strong>SZÍN: </strong>
+            piros, zöld, lila
+            <br>
+            <strong>SZÁM: </strong>
+            1, 2 vagy 3 forma
+            <br>
+            <strong>TARTALOM: </strong>
+            tömör, csíkos, üres
+            </div>
+            <br>
+        Egy SET 3 kártyából áll, amiben minden jellemzőt külön megvizsgálva, azoknak
+            <br>
+            vagy minden kártyán azonosnak,
+            vagy minden kártyán különbözőnek kell lennie.
+            <br>
+        Ennek a szabálynak MINDEN tulajdonság esetében meg kell felelnie a kiválasztott három lapnak. <br>
+        br
+        Más szavakkal: a forma vagy azononos mindhárom kártyán,
+        vagy mindegyiken más; a szín vagy azonos mindhárom kártyán, vagy mindegyiken különböző, stb... <br>
+        Fordítva: ha a lapokon egy tulajdonságot vizsgálva 2 azonos és 1 különböző típus látható, akkor az nem SET. Például, ha 2 lap piros, 1 pedig lila, akkor az nem SET.</p>
+    </div>
+    
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

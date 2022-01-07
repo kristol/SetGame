@@ -1,0 +1,235 @@
+body{
+    font-family: 'Lucida Sans', sans-serif;
+    background-color: #f1faee;
+}
+
+#everything{
+    width: 100%;
+    overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 0em;
+}
+
+p{
+    text-align: center;
+    font-size: 1em;
+}
+
+#deck{
+    margin: auto;
+    height: 42em;
+    width: 50em;
+}
+
+#deck table{
+    margin: auto;
+    height: 42em;
+    width: 40em;
+    text-align: center;
+}
+
+.selected{
+    background-color: #e63946;
+    border: 3px solid #e63946;
+}
+
+.showed{
+    background-color: #e5ff00;
+    border: 3px solid #e5ff00;
+}
+
+img{
+    
+    margin-left: 40px;
+    margin-right: 40px;
+    height: 9em;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+span{
+    text-align: center;
+}
+
+
+/* MENU + GAMEBOARD */
+#menu{
+   background-color: #a8dadc; 
+   margin: auto;
+   height: 42em;
+   width: 50em;
+   border: 3px solid black;
+   padding: 10px;
+   text-align: center;
+}
+
+#buttons{
+    background-color: #2eaa58; 
+    align-items: center;
+    width: 8em;
+    height: 43em;
+    border: 2px solid black;
+    float:left; 
+    margin: auto;
+}
+
+#game{
+    background-color: #457b9d; 
+    margin: auto;
+    height: 42em;
+    width: 50em;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#rules{
+    background-color: lightgreen; 
+    margin: auto;
+    height: 42em;
+    width: 50em;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#szab{
+    text-align: justify;
+    margin-left: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#playersIn{
+    background-color: lightsalmon; 
+    margin: auto;
+    height: 42em;
+    width: 50em;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+input{
+    margin-top: 0;
+    size: 20px;
+    width: 10%;
+    padding: 6px 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+#settingsPage{
+    background-color: lightskyblue; 
+    margin: auto;
+    height: 42em;
+    width: 50em;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#gameModeSettings{
+    background-color: #4ac9be; 
+    margin: auto;
+    height: 42em;
+    width: 50em;
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center; 
+}
+
+
+
+/*BUTTONS + INPUT*/
+#startButton{
+    background-color: #1c62e4;
+    font-size: 40px;
+    margin-top: 20px;
+    width: 7em;
+}
+
+#rulesButton{
+    background-color: #1c62e4;
+    font-size: 40px;
+    margin-top: 20px;
+    width: 7em;
+}
+
+#playersN{
+    background-color: #1c62e4;
+    font-size: 40px;
+    margin-top: 20px;
+    width: 7em;
+}
+
+#settings{
+    background-color: #1c62e4;
+    font-size: 40px;
+    margin-top: 20px;
+    width: 7em;
+}
+
+#gameMode{
+    background-color: #1c62e4;
+    font-size: 40px;
+    margin-top: 20px;
+    width: 7em; 
+}
+
+#isThereASetButton{
+    background-color: #4bc3e7;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 7em; 
+}
+
+#setShowButton{
+    background-color: #4bc3e7;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 7em;
+}
+
+#plusThreeButton{
+    background-color:#4bc3e7;
+    font-size: 18px;
+    margin-top: 10px;
+    width: 7em;
+}
+
+
+
+#backFromGM{
+    background-color: #f57c44;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#back{
+    background-color: #2ef1a7;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#backFromSettings{
+    background-color: #7264ec;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+#OK{
+    background-color: #f5d057;
+    font-size: 25px;
+    margin-top: 15px; 
+}
